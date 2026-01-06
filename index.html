@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>BM Automobiles - Carrosserie & Mécanique Nantes</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="carrosserie nantes, garage nantes, réparation automobile, peinture voiture, mécanique toutes marques" name="keywords">
+    <meta content="BM Automobiles à Nantes : experts en carrosserie et mécanique depuis 2007. Atelier agréé assurances, devis gratuit, toutes marques." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Bouton WhatsApp flottant */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        @keyframes pulse-whatsapp {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        /* Améliorations visuelles */
+        .service-img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .service-img:hover {
+            transform: scale(1.02);
+        }
+        .nav-pills .nav-link.active {
+            background: linear-gradient(135deg, #D81324 0%, #a50e1c 100%);
+            color: white;
+            border-left: 4px solid #ffc107;
+        }
+        .price-table th {
+            background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+        }
+        .required-field::after {
+            content: " *";
+            color: #D81324;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Chargement...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Bouton WhatsApp Flottant -->
+    <a href="https://wa.me/33744414266?text=Bonjour%20BM%20Automobiles%2C%20je%20souhaite%20un%20devis%20pour%20mon%20v%C3%A9hicule.%0A-%20Mod%C3%A8le%20%3A%20%0A-%20Immatriculation%20%3A%20%0A-%20Prestation%20souhait%C3%A9e%20%3A%20" 
+       class="whatsapp-float" target="_blank" title="Demander un devis WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>20 Chemin des Bateliers 44300 Nantes</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Lun - Jeu : 08h30 - 12h30 ⎪ 14h00 - 18h00 <br>Ven : 08h30 - 12h30 ⎪ 14h00 - 17h00 </small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small><a href="tel:0251135491" class="text-dark text-decoration-none">02 51 13 54 91</a></small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-car me-3"></i>BM Automobiles</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                <a href="#about" class="nav-item nav-link">À Propos</a>
+                <a href="#services" class="nav-item nav-link">Services</a>
+                <a href="#testimonials" class="nav-item nav-link">Avis</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="https://wa.me/33744414266" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+                <i class="fab fa-whatsapp me-2"></i>Devis WhatsApp
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/poncage_caro.jpg" alt="Atelier de carrosserie BM Automobiles">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Expert Carrosserie & Mécanique //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Centre de réparation automobile toutes marques</h1>
+                                    <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown">
+                                        Découvrir nos services <i class="fa fa-arrow-right ms-3"></i>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/cayenne.png" alt="Véhicule de luxe réparé">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/peint_caro.jpg" alt="Peinture automobile de précision">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Atelier Agréé Assurance //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Votre libre choix du réparateur</h1>
+                                    <a href="#contact" class="btn btn-primary py-3 px-5 animated slideInDown">
+                                        Demander un devis <i class="fa fa-file-alt ms-3"></i>
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/Ml350cdi.png" alt="SUV Mercedes réparé">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/mecanique.jpg" alt="Réparation mécanique professionnelle">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// 19 Ans d'Expérience //</h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Réparation et entretien mécanique expert</h1>
+                                    <a href="tel:0251135491" class="btn btn-primary py-3 px-5 animated slideInDown">
+                                        <i class="fa fa-phone-alt me-2"></i> Appeler maintenant
+                                    </a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/Q7.png" alt="Audi Q7 entretenue">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Valeurs Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Qualité de Service</h5>
+                            <p>Nous nous engageons à fournir un service de la plus haute qualité où l'expertise technique et l'attention au détail garantissent la satisfaction totale.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="d-flex bg-light py-5 px-4">
+                        <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Techniciens Qualifiés</h5>
+                            <p>Nos techniciens sont des professionnels qualifiés, dotés d'une expertise reconnue et d'un engagement envers l'excellence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Engagement & Excellence</h5>
+                            <p>Notre équipe est toujours à l'écoute pour offrir un suivi personnalisé et un support après-vente réactif.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Valeurs End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 pt-4" style="min-height: 400px;">
+                    <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
+                        <img class="position-absolute img-fluid w-100 h-100 service-img" src="img/service-2.jpg" style="object-fit: cover;" alt="Atelier BM Automobiles">
+                        <div class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5" style="background: rgba(216, 19, 36, 0.9);">
+                            <h1 class="display-4 text-white mb-0">19 <span class="fs-4">Ans</span></h1>
+                            <h4 class="text-white">d'Expérience</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="text-primary text-uppercase">// À Propos de Nous //</h6>
+                    <h1 class="mb-4"><span class="text-primary">BM Automobiles</span> : Excellence Automobile depuis 2007</h1>
+                    <p class="mb-4">Fondé en 2007, notre atelier s'est imposé comme une référence de confiance dans le domaine de la carrosserie et de la mécanique à Nantes. Nos évaluations élogieuses témoignent de l'excellence de nos services.</p>
+                    <div class="row g-4 mb-3 pb-3">
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">01</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Professionnalisme & Expertise</h6>
+                                    <span>Nos experts incarnent l'excellence technique, garantissant des services qui définissent les standards de qualité.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">02</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Centre de Prestation Qualité</h6>
+                                    <span>Chaque véhicule est traité avec le plus grand soin, assurant un travail irréprochable et une attention aux détails.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="d-flex">
+                                <div class="bg-light d-flex flex-shrink-0 align-items-center justify-content-center mt-1" style="width: 45px; height: 45px;">
+                                    <span class="fw-bold text-secondary">03</span>
+                                </div>
+                                <div class="ps-3">
+                                    <h6>Confiance Client</h6>
+                                    <span>Notre longue histoire de confiance et de satisfaction client témoigne de notre engagement à offrir des services transparents et honnêtes, renforçant ainsi les liens avec notre clientèle.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary py-3 px-5">Nous Contacter <i class="fa fa-arrow-right ms-3"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Statistiques Start -->
+    <div class="container-fluid fact bg-dark my-5 py-5" id="statistics">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <i class="fa fa-check fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2 counter-number" data-count="19">0</h2>
+                    <p class="text-white mb-0">Années d'Expérience</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2 counter-number" data-count="6">0</h2>
+                    <p class="text-white mb-0">Experts Qualifiés</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-users fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2 counter-number" data-count="9820">0</h2>
+                    <p class="text-white mb-0">Clients Satisfaits</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-car fa-2x text-white mb-3"></i>
+                    <h2 class="text-white mb-2 counter-number" data-count="26520">0</h2>
+                    <p class="text-white mb-0">Véhicules Réparés</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Statistiques End -->
+
+  <!-- Services Start -->
+<div class="container-xxl service py-5" id="services">
+    <div class="container">
+        <!-- En-tête modernisée avec proposition de valeur -->
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Expert & Agréé //</h6>
+            <h1 class="display-5 mb-3">Vos experts carrosserie & mécanique à Nantes</h1>
+            <p class="lead mb-5">Réparations garanties, agréé par vos assureurs, et <span class="text-primary fw-bold">devis gratuit</span> sous 24h.</p>
+        </div>
+
+        <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4">
+                <!-- Navigation des services améliorée -->
+                <div class="nav w-100 nav-pills me-4">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                        <div class="bg-light rounded-circle p-3 me-3">
+                            <i class="fa fa-cogs fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Mécanique & Entretien</h5>
+                            <small class="text-muted">Vidange, freinage, distribution...</small>
+                        </div>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                        <div class="bg-light rounded-circle p-3 me-3">
+                            <i class="fa fa-spray-can fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Carrosserie & Peinture</h5>
+                            <small class="text-muted">Débosselage, peinture, restauration</small>
+                        </div>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                        <div class="bg-light rounded-circle p-3 me-3">
+                            <i class="fa fa-car-crash fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Réparation Sinistre</h5>
+                            <small class="text-muted">Agréé assurance, prise en charge</small>
+                        </div>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                        <div class="bg-light rounded-circle p-3 me-3">
+                            <i class="fa fa-tint fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Vitrage & Pare-brise</h5>
+                            <small class="text-muted">Recharge, remplacement, ADAS</small>
+                        </div>
+                    </button>
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                        <div class="bg-light rounded-circle p-3 me-3">
+                            <i class="fa fa-star fa-2x text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Esthétique & Protection</h5>
+                            <small class="text-muted">Polissage, traitement céramique</small>
+                        </div>
+                    </button>
+                    <!-- Bannière de contact incitative -->
+                    <div class="card bg-primary border-0 text-white mt-2 p-4 shadow">
+                        <div class="card-body text-center">
+                            <h6 class="card-title"><i class="fa fa-comment-alt me-2"></i>Un conseil ? Un devis ?</h6>
+                            <p class="card-text small mb-3">Nos experts vous répondent rapidement.</p>
+                            <a href="https://wa.me/33744414266?text=Bonjour%20BM%20Automobiles%2C%20pouvez-vous%20m'aider%20%3F" 
+                               class="btn btn-light btn-sm w-100" target="_blank">
+                                <i class="fab fa-whatsapp me-2"></i>Échanger sur WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="tab-content w-100">
+                    <!-- ONGLET 1 : MÉCANIQUE & ENTRETIEN -->
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 380px;">
+                                <div class="position-relative h-100 rounded-3 overflow-hidden shadow">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="img/moteur.jpg" style="object-fit: cover;" alt="Technicien effectuant une réparation moteur">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Gardez votre véhicule fiable et performant</h3>
+                                <p class="mb-4">Notre atelier mécanique <strong>préserve votre garantie constructeur</strong> et utilise des outils de diagnostic dernier cri pour toutes marques.</p>
+                                
+                                <div class="row mb-4">
+                                    <div class="col-sm-6">
+                                        <h5 class="text-primary mb-3"><i class="fa fa-tools me-2"></i>Entretien Courant</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Vidange & révision</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Freinage (plaquettes/disques)</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Pneumatiques & géométrie</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Batterie & éclairage</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Climatisation & filtration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h5 class="text-primary mb-3"><i class="fa fa-cog me-2"></i>Mécanique Lourde</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Distribution & embrayage</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Diagnostic électronique</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Suspension & amortisseurs</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Échappement & FAP</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Préparation contrôle technique</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fa fa-car text-success me-3 fa-lg"></i>
+                                    <span><strong>Véhicule de courtoisie</strong> (selon disponibilité)</span>
+                                </div>
+                                
+                                <a href="https://wa.me/33744414266?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20de%20la%20m%C3%A9canique%2Fentretien.%0A%2D%20Mod%C3%A8le%20%3A%20%0A%2D%20Immatriculation%20%3A%20%0A%2D%20Travail%20%C3%A0%20effectuer%20%3A%20" 
+                                   class="btn btn-primary btn-lg px-4 py-3 mt-2" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>Demander un devis mécanique
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ONGLET 2 : CARROSSERIE & PEINTURE -->
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 380px;">
+                                <div class="position-relative h-100 rounded-3 overflow-hidden shadow">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="img/caro_peint.jpg" style="object-fit: cover;" alt="Rénovation de carrosserie en cabine de peinture">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Redonnez tout son éclat à votre carrosserie</h3>
+                                <p class="mb-4">De la simple rayure à la rénovation complète, notre atelier garantit un <strong>travail esthétique et durable.</strong></p>
+                                
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="fa fa-check-circle text-success me-2"></i><strong>Débosselage sans peinture</strong> (technique PDR)</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Réparation et remplacement de pièces</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i><strong>Peinture en cabine</strong> avec garantie couleur</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Réparation de pare-chocs plastique</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Restauration de jantes alliage</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Raccords de peinture invisibles</li>
+                                </ul>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="fa fa-car text-success me-3 fa-lg"></i>
+                                    <span><strong>Véhicule de courtoisie</strong> (selon disponibilité)</span>
+                                </div>
+                                
+                                <a href="https://wa.me/33744414266?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20de%20la%20carrosserie%2Fpeinture.%0A%2D%20Mod%C3%A8le%20%3A%20%0A%2D%20Immatriculation%20%3A%20%0A%2D%20D%C3%A9g%C3%A2ts%20%3A%20" 
+                                   class="btn btn-primary btn-lg px-4 py-3" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>Envoyer des photos pour estimation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ONGLET 3 : RÉPARATION SINISTRE -->
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 380px;">
+                                <div class="position-relative h-100 rounded-3 overflow-hidden shadow">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="img/sinistre_auto.jpg" style="object-fit: cover;" alt="Véhicule accidenté en cours de réparation">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Votre accident, notre expertise : on s'occupe de tout</h3>
+                                <p class="mb-4">Atelier <strong>agréé par les principales assurances</strong>. Nous gérons l'intégralité de votre dossier sinistre pour une réparation sereine et conforme.</p>
+                                
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="fa fa-check-circle text-success me-2"></i><strong>Prise en charge complète</strong> du dossier sinistre</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Expertise et devis conformes aux normes assurance</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Réparation selon rapport d'expert</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Relation directe avec votre assureur</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Réutilisation possible de vos pièces d'origine</li>
+                                </ul>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <i class="fa fa-car text-success me-3 fa-lg"></i>
+                                    <span><strong>Véhicule de courtoisie</strong> (selon disponibilité)</span>
+                                </div>
+
+                                <div class="alert alert-info border-0 bg-light">
+                                    <p class="mb-0"><i class="fa fa-info-circle me-2"></i><strong>Vous avez le libre choix du réparateur</strong> (loi Hamon). Choisissez l'expertise BM Automobiles.</p>
+                                </div>
+                                
+                                <a href="https://wa.me/33744414266?text=Bonjour%2C%20je%20suis%20victime%20d'un%20sinistre%20et%20souhaite%20%C3%AAtre%20pris%20en%20charge.%0A%2D%20Mod%C3%A8le%20%3A%20%0A%2D%20Immatriculation%20%3A%20%0A%2D%20N%C2%B0%20de%20dossier%20assurance%20(si%20d%C3%A9j%C3%A0%20ouvert)%20%3A%20" 
+                                   class="btn btn-primary btn-lg px-4 py-3 mt-2" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>Déclarer un sinistre
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ONGLET 4 : VITRAGE & PARE-BRISE -->
+                    <div class="tab-pane fade" id="tab-pane-4">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 380px;">
+                                <div class="position-relative h-100 rounded-3 overflow-hidden shadow">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="img/parebrise.jpg" style="object-fit: cover;" alt="Technicien calibrant un système ADAS après remplacement de pare-brise">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Vitrage sécurisé</h3>
+                                <p class="mb-4">Spécialistes du remplacement de pare-brise<strong>Nous recalibrons les systèmes ADAS</strong> (aide à la conduite) pour votre sécurité.</p>
+                                
+                                <div class="row mb-4">
+                                    <!-- 
+                                    <div class="col-sm-6">
+                                        <h5 class="text-primary mb-3"><i class="fa fa-wind me-2"></i>Climatisation</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Recharge de climatisation</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Désinfection & antibactérien</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Détection et réparation de fuites</li>
+                                        </ul>
+                                    </div>
+                                    -->
+                                    <div class="col-md-10">
+                                        <h5 class="text-primary mb-3"><i class="fa fa-window-maximize me-2"></i>Pare-brise & Vitrage</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Remplacement de tout vitrage</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i>Réparation d'impact (si possible)</li>
+                                            <li><i class="fa fa-check-circle text-success me-2"></i><strong>Calibrage ADAS</strong> inclus si nécessaire</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted"><i class="fa fa-shield-alt me-2"></i><strong>Zéro avance de frais</strong> dans le cadre d'un remplacement par assurance.</p>
+                                
+                                <a href="https://wa.me/33744414266?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%3A%0A%2D%20Climatisation%20%2F%20Pare%2Dbrise%20(cocher)%0A%2D%20Mod%C3%A8le%20%3A%20%0A%2D%20Immatriculation%20%3A%20%0A%2D%20Probl%C3%A8me%20rencontr%C3%A9%20%3A%20" 
+                                   class="btn btn-primary btn-lg px-4 py-3" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>Devis Pare-brise
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ONGLET 5 : ESTHÉTIQUE & PROTECTION -->
+                    <div class="tab-pane fade" id="tab-pane-5">
+                        <div class="row g-4">
+                            <div class="col-md-6" style="min-height: 380px;">
+                                <div class="position-relative h-100 rounded-3 overflow-hidden shadow">
+                                    <img class="position-absolute img-fluid w-100 h-100" src="img/polissage.jpg" style="object-fit: cover;" alt="Polissage professionnel de la carrosserie">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="mb-3">Sublimez et protégez durablement votre véhicule</h3>
+                                <p class="mb-4">Offrez à votre voiture un traitement esthétique haute gamme pour la <strong>protéger des agressions</strong> et conserver sa valeur.</p>
+                                
+                                <ul class="list-unstyled mb-4">
+                                    <li><i class="fa fa-check-circle text-success me-2"></i><strong>Polissage & lustrage</strong> professionnel</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Traitement anti-rouille & anticorrosion</li>
+                                    <li><i class="fa fa-check-circle text-success me-2"></i>Rénovation des phares jaunis</li>
+                                </ul>
+                                
+                                <a href="https://wa.me/33744414266?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9(e)%20par%20un%20traitement%20esth%C3%A9tique%2Fprotection.%0A%2D%20Mod%C3%A8le%20%3A%20%0A%2D%20Immatriculation%20%3A%20%0A%2D%20Traitement%20envisag%C3%A9%20%3A%20" 
+                                   class="btn btn-primary btn-lg px-4 py-3" target="_blank">
+                                    <i class="fab fa-whatsapp me-2"></i>Demander un devis esthétique
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+    <!-- Devis Express -->
+    <div class="container-fluid bg-dark py-5 my-5">
+        <div class="container text-center text-white">
+            <h2 class="text-white mb-4 wow fadeInUp">Un Devis Express  ?</h2>
+            <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">Envoyez-nous les photos de votre véhicule par WhatsApp pour une estimation rapide et précise.</p>
+            <div class="d-flex flex-column flex-lg-row justify-content-center gap-4 wow fadeInUp" data-wow-delay="0.4s">
+                <a href="https://wa.me/33744414266?text=Bonjour%20BM%20Automobiles%2C%20je%20souhaite%20un%20devis%20pour%20mon%20v%C3%A9hicule.%0A-%20Mod%C3%A8le%20%3A%20%0A-%20Immatriculation%20%3A%20%0A-%20Prestation%20souhait%C3%A9e%20%3A%20" 
+                   class="btn btn-success btn-lg py-3 px-5 d-flex align-items-center justify-content-center">
+                    <i class="fab fa-whatsapp fa-2x me-3"></i>
+                    <div class="text-start">
+                        <div class="fw-bold">Devis par WhatsApp ou Mail </div>
+                        <small class="d-block">Réponse sous 24h</small>
+                    </div>
+                </a>
+                <a href="tel:0251135491" class="btn btn-primary btn-lg py-3 px-5 d-flex align-items-center justify-content-center">
+                    <i class="fa fa-phone-alt fa-2x me-3"></i>
+                    <div class="text-start">
+                        <div class="fw-bold">Appeler l'atelier</div>
+                        <small class="d-block">02 51 13 54 91</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Témoignages Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" id="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="text-primary text-uppercase">// Témoignages //</h6>
+                <h1 class="mb-5">Ce que disent nos clients !</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/jeuneH.jpg" style="width: 80px; height: 80px;" alt="Client Bastien">
+                    <h5 class="mb-0">Bastien</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Très satisfait personnel respectueux et professionnel je vous recommande fortement cette enseigne.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/femme_africaine.jpg" style="width: 80px; height: 80px;" alt="Client Marjorie">
+                    <h5 class="mb-0">Marjorie</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Très sérieux et supers sympas</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;" alt="Client Adam">
+                    <h5 class="mb-0">Adam</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Le gérant s'est montré accueillant et très professionnel. Il m'a proposé des solutions à mes soucis avec un tarif attractif sans aucunement sacrifier le travail ou les pièces. Je ne fais mon entretien que chez eux et aucun reproche à faire.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="bg-light rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;" alt="Client Dom">
+                    <h5 class="mb-0">Dom</h5>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Malgré l'absence de personnels le jour de notre RDV, nous avons été très bien accueillis et tout à été mis en place pour effectuer le travail dans la journée. L'expérience a donc été positive. De plus les prix sont très corrects !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Témoignages End -->
+
+    <!-- Formulaire Contact Start -->
+    <div class="container-xxl py-5" id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <h6 class="text-primary text-uppercase">// Contact & Devis //</h6>
+                    <h1 class="mb-4">Demandez Votre Devis Personnalisé</h1>
+                    <p class="mb-4">Remplissez ce formulaire pour recevoir un devis détaillé sous 24h. N'oubliez pas d'inclure les informations essentielles : modèle, immatriculation et prestation souhaitée.</p>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-light rounded-circle" style="width: 50px; height: 50px;">
+                            <i class="fa fa-map-marker-alt text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-1">Adresse</h5>
+                            <p class="mb-0">20 Chemin des Bateliers 44300 Nantes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-light rounded-circle" style="width: 50px; height: 50px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-1">Téléphone</h5>
+                            <p class="mb-0">02 51 13 54 91</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-light rounded-circle" style="width: 50px; height: 50px;">
+                            <i class="fab fa-whatsapp text-success"></i>
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-1">WhatsApp</h5>
+                            <p class="mb-0">07 44 41 42 66</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-light p-4 rounded">
+                        <h5 class="mb-3"><i class="fa fa-clock text-primary me-2"></i>Horaires d'Ouverture</h5>
+                        <p class="mb-2"><strong>Lundi - Jeudi :</strong> 08h30 - 12h30 ⎪ 14h00 - 18h00</p>
+                        <p class="mb-0"><strong>Vendredi :</strong> 08h30 - 12h30 ⎪ 14h00 - 17h00</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-light p-5 rounded">
+                        <h3 class="mb-4 text-center">Formulaire de Devis</h3>
+                        <form action="traitement.php" method="POST" enctype="multipart/form-data">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="required-field">Nom complet</label>
+                                    <input type="text" name="nom" class="form-control" placeholder="Votre nom" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="required-field">Téléphone</label>
+                                    <input type="tel" name="telephone" class="form-control" placeholder="Votre téléphone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="required-field">Modèle du véhicule</label>
+                                    <input type="text" name="modele" class="form-control" placeholder="Ex: Peugeot 308" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="required-field">Immatriculation</label>
+                                    <input type="text" name="immatriculation" class="form-control" placeholder="Ex: AB-123-CD" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="required-field">Prestation souhaitée</label>
+                                    <select name="prestation" class="form-select" required>
+                                        <option value="">Sélectionnez...</option>
+                                        <option value="carrosserie">Carrosserie / Peinture</option>
+                                        <option value="mecanique">Mécanique / Entretien</option>
+                                        <option value="sinistre">Réparation après sinistre</option>
+                                        <option value="parebrise">Pare-brise / Vitrage</option>
+                                        <option value="esthetique">Esthétique / Protection</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label>Photos du véhicule (optionnel mais recommandé)</label>
+                                    <input type="file" name="photos[]" class="form-control" multiple accept="image/*">
+                                    <small class="text-muted">Vous pouvez sélectionner plusieurs photos</small>
+                                </div>
+                                <div class="col-12">
+                                    <label>Description de votre demande</label>
+                                    <textarea name="message" class="form-control" rows="3" placeholder="Décrivez votre problème ou demande..."></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="consentement" required>
+                                        <label class="form-check-label" for="consentement">
+                                            J'accepte que mes données soient utilisées pour l'établissement de mon devis
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">
+                                        <i class="fa fa-paper-plane me-2"></i> Envoyer ma demande de devis
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Formulaire Contact End -->
+
+    <!-- Localisation & Itinéraire Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase mb-2">// Nous Trouver //</h6>
+                <h1 class="mb-4">Venez nous rencontrer à l'atelier</h1>
+                <p class="mb-4">Notre atelier est facilement accessible depuis Nantes et ses environs. Parking disponible sur place.</p>
+                
+                <div class="d-flex align-items-center mb-3">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-light rounded-circle" style="width: 50px; height: 50px;">
+                        <i class="fa fa-map-marker-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="mb-1">Adresse</h5>
+                        <p class="mb-0">20 Chemin des Bateliers, 44300 Nantes</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-light rounded-circle" style="width: 50px; height: 50px;">
+                        <i class="fa fa-car text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <h5 class="mb-1">Itinéraire</h5>
+                        <p class="mb-0">Depuis le centre-ville : Bords de Loire direction Est</p>
+                    </div>
+                </div>
+                
+                <div class="bg-light p-4 rounded mb-4">
+                    <h5 class="mb-3"><i class="fa fa-directions text-primary me-2"></i>Planifiez votre itinéraire</h5>
+                    <a href="https://www.google.com/maps/dir//BM+AUTOMOBILES,+20+Chemin+des+Bateliers,+44300+Nantes/" 
+                       class="btn btn-outline-primary btn-sm mb-2" target="_blank">
+                        <i class="fab fa-google me-2"></i>Itinéraire Google Maps
+                    </a>
+                    <a href="https://maps.apple.com/?q=BM+AUTOMOBILES+Nantes&ll=47.2266505,-1.9278431" 
+                       class="btn btn-outline-dark btn-sm mb-2" target="_blank">
+                        <i class="fab fa-apple me-2"></i>Itinéraire Apple Plans
+                    </a>
+                    <a href="https://waze.com/ul?ll=47.2266505,-1.9278431&navigate=yes" 
+                       class="btn btn-outline-success btn-sm" target="_blank">
+                        <i class="fab fa-waze me-2"></i>Itinéraire Waze
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
+                    <iframe class="position-absolute w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2707.753028824603!2d-1.5305874234543768!3d47.22665047119961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ef239c9bd225%3A0xc814455cd110d175!2sBM%20AUTOMOBILES!5e0!3m2!1sfr!2sfr!4v1716555941413!5m2!1sfr!2sfr"
+                        frameborder="0" style="border:0;" allowfullscreen="" 
+                        aria-hidden="false" tabindex="0"
+                        loading="lazy" 
+                        title="Carte de localisation de BM Automobiles à Nantes">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Instructions d'accès détaillées -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary mb-3"><i class="fa fa-info-circle me-2"></i>Comment venir à l'atelier</h5>
+                        <div class="row">
+                            <div class="col-md-4">
+                            <h6><i class="fa fa-map-marker-alt text-success me-2"></i>Situation idéale</h6>
+                            <p class="small mb-2">
+                                Notre atelier est idéalement situé dans la zone d'activité de Nantes, à :
+                            </p>
+                            <p class="small mb-1">
+                                <i class="fa fa-clock text-primary me-1"></i> <strong>5 minutes</strong> de la Porte d'Anjou
+                            </p>
+                            <p class="small mb-2">
+                                <i class="fa fa-clock text-primary me-1"></i> <strong>10 minutes</strong> du centre-ville de Nantes
+                            </p>
+                            <p class="small mb-0 text-primary">
+                                <i class="fa fa-mouse-pointer me-1"></i> Cliquez sur la carte et laissez votre GPS vous guider !
+                            </p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6><i class="fa fa-bus text-warning me-2"></i>En transports</h6>
+                                <p class="small mb-2">Bus : Arrêt San Fransico  (400 m)</p>
+                                <p class="small mb-0">Tramway : ligne 1 Arrêt Bd Doulon (800 m)</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h6><i class="fa fa-clock text-info me-2"></i>Dépannage</h6>
+                                <p class="small mb-2">Véhicule de courtoisie selon disponibilité</p>
+                                <p class="small mb-0">Appelez-nous au 02 51 13 54 91</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Localisation & Itinéraire End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Adresse & Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>20 Chemin des Bateliers 44300 Nantes</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>02 51 13 54 91</p>
+                    <p class="mb-2"><i class="fab fa-whatsapp me-3"></i>07 44 41 42 66</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>bmautomobiles.contact@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Horaires d'Ouverture</h4>
+                    <h6 class="text-light">Lundi - Jeudi :</h6>
+                    <p class="mb-2">08h30 - 12h30</p>
+                    <p class="mb-4">14h00 - 18h00</p>
+                    <h6 class="text-light">Vendredi :</h6>
+                    <p class="mb-2">08h30 - 12h30</p>
+                    <p class="mb-4">14h00 - 17h00</p>
+                    <p class="mb-0"><em>Samedi et Dimanche : Fermé</em></p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">Services</h4>
+                    <a class="btn btn-link" href="#services">Carrosserie & Peinture</a>
+                    <a class="btn btn-link" href="#services">Mécanique & Entretien</a>
+                    <a class="btn btn-link" href="#services">Gestion des Sinistres</a>
+                    <a class="btn btn-link" href="#services">Pare-brise & Vitrage</a>
+                    <a class="btn btn-link" href="#services">Esthétique Automobile</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">BM Automobiles</a> 2025 - Tous droits réservés.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Accueil</a>
+                            <a href="#about">À Propos</a>
+                            <a href="#services">Services</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+      <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+<script src="js_lst/main.js"></script>
+
+<!-- Script simplifié pour initialisations supplémentaires -->
+<script>
+// Script simplifié - juste pour initialiser WOW.js
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
+    
+    // Carrousel de témoignages (s'il n'est pas déjà initialisé dans main.js)
+    if (typeof $.fn.owlCarousel !== 'undefined' && $('.testimonial-carousel').length && !$('.testimonial-carousel').data('owl.carousel')) {
+        $('.testimonial-carousel').owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            margin: 25,
+            dots: true,
+            loop: true,
+            center: true,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 1 },
+                768: { items: 2 },
+                992: { items: 3 }
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
