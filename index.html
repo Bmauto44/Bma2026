@@ -32,6 +32,19 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
+        /* Force toutes les images du carrousel à avoir la même hauteur sur grand écran */
+        .carousel-item img {
+            height: 700px; /* Ajustez cette valeur si vos autres images d'origine ont une hauteur différente */
+            object-fit: cover;
+        }
+
+        /* Ajustement de la hauteur du carrousel sur mobile pour garder l'harmonie */
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 450px;
+            }
+        }
+
         /* Bouton WhatsApp flottant */
         .whatsapp-float {
             position: fixed;
@@ -221,7 +234,8 @@
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
                                     <h6 class="text-white text-uppercase mb-3 animated slideInDown">// habilitation d'état SIV //</h6>
                                     <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Service Carte Grise</h1>
-                                    <a href="#services" class="btn btn-primary py-3 px-5 animated slideInDown">
+                                    <!-- Ajout de l'identifiant de redirection data-target-tab pour le JS -->
+                                    <a href="#services" data-target-tab="#tab-pane-6" class="btn btn-primary py-3 px-5 animated slideInDown btn-scroll-to-tab">
                                         Faire ma carte grise <i class="fa fa-id-card ms-3"></i>
                                     </a>
                                 </div>
@@ -271,7 +285,7 @@
                         <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
                         <div class="ps-4">
                             <h5 class="mb-3">Engagement & Excellence</h5>
-                            <p>Notre équipe est toujours à l'écoute pour offer un suivi personnalisé et un support après-vente réactif.</p>
+                            <p>Notre équipe est toujours à l'écoute pour offrir un suivi personnalisé et un support après-vente réactif.</p>
                         </div>
                     </div>
                 </div>
@@ -327,7 +341,7 @@
                                 </div>
                                 <div class="ps-3">
                                     <h6>Confiance Client</h6>
-                                    <span>Notre longue histoire de confiance et de satisfaction client témoigne de notre engagement à offer des services transparents et honnêtes, renforçant ainsi les liens avec notre clientèle.</span>
+                                    <span>Notre longue histoire de confiance et de satisfaction client témoigne de notre engagement à offrir des services transparents et honnêtes, renforçant ainsi les liens avec notre clientèle.</span>
                                 </div>
                             </div>
                         </div>
@@ -381,8 +395,8 @@
         <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
             <div class="col-lg-4">
                 <!-- Navigation des services améliorée -->
-                <div class="nav w-100 nav-pills me-4">
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                <div class="nav w-100 nav-pills me-4" id="services-nav-pills">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3 active" id="tab-btn-1" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                         <div class="bg-light rounded-circle p-3 me-3">
                             <i class="fa fa-cogs fa-2x text-primary"></i>
                         </div>
@@ -391,7 +405,7 @@
                             <small class="text-muted">Vidange, freinage, distribution...</small>
                         </div>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" id="tab-btn-2" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
                         <div class="bg-light rounded-circle p-3 me-3">
                             <i class="fa fa-spray-can fa-2x text-primary"></i>
                         </div>
@@ -400,7 +414,7 @@
                             <small class="text-muted">Débosselage, peinture, restauration</small>
                         </div>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" id="tab-btn-3" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
                         <div class="bg-light rounded-circle p-3 me-3">
                             <i class="fa fa-car-crash fa-2x text-primary"></i>
                         </div>
@@ -409,7 +423,7 @@
                             <small class="text-muted">Agréé assurance, prise en charge</small>
                         </div>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" id="tab-btn-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
                         <div class="bg-light rounded-circle p-3 me-3">
                             <i class="fa fa-tint fa-2x text-primary"></i>
                         </div>
@@ -418,7 +432,7 @@
                             <small class="text-muted">Remplacement, réparation impact</small>
                         </div>
                     </button>
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" id="tab-btn-5" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
                         <div class="bg-light rounded-circle p-3 me-3">
                             <i class="fa fa-star fa-2x text-primary"></i>
                         </div>
@@ -428,7 +442,7 @@
                         </div>
                     </button>
                     <!-- ONGLET : SERVICE CARTE GRISE -->
-                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+                    <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-3" id="tab-btn-6" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
                         <div class="bg-light rounded-circle p-3 me-3">
                             <i class="fa fa-id-card fa-2x text-primary"></i>
                         </div>
@@ -561,7 +575,7 @@
                                 </div>
 
                                 <div class="alert alert-info border-0 bg-light">
-                                    <p class="mb-0"><i class="fa fa-info-circle me-2"></i><strong>Vous avez le libre choix du réparateur</strong> (loi Hamon). Choose l'expertise BM Automobiles.</p>
+                                    <p class="mb-0"><i class="fa fa-info-circle me-2"></i><strong>Vous avez le libre choix du réparateur</strong> (loi Hamon). Choisissez l'expertise BM Automobiles.</p>
                                 </div>
                                 
                                 <a href="https://wa.me/33744414266?text=Bonjour%2C%20je%20suis%20victime%20d'un%20sinistre%20et%20souhaite%20%C3%AAtre%20pris%20en%20charge.%0A%2D%20Mod%C3%A8le%20%3A%20%0A%2D%20Immatriculation%20%3A%20%0A%2D%20N%C2%B0%20de%20dossier%20assurance%20(si%20d%C3%A9j%C3%A0%20ouvert)%20%3A%20" 
@@ -984,13 +998,13 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="#services">Carrosserie & Peinture</a>
-                    <a class="btn btn-link" href="#services">Mécanique & Entretien</a>
-                    <a class="btn btn-link" href="#services">Gestion des Sinistres</a>
-                    <a class="btn btn-link" href="#services">Pare-brise & Vitrage</a>
-                    <a class="btn btn-link" href="#services">Esthétique Automobile</a>
-                    <!-- NOUVEAU LIEN DANS LE FOOTER -->
-                    <a class="btn btn-link" href="#services">Service Carte Grise</a>
+                    <a class="btn btn-link btn-footer-service" href="#services" data-target-tab="#tab-pane-2">Carrosserie & Peinture</a>
+                    <a class="btn btn-link btn-footer-service" href="#services" data-target-tab="#tab-pane-1">Mécanique & Entretien</a>
+                    <a class="btn btn-link btn-footer-service" href="#services" data-target-tab="#tab-pane-3">Gestion des Sinistres</a>
+                    <a class="btn btn-link btn-footer-service" href="#services" data-target-tab="#tab-pane-4">Pare-brise & Vitrage</a>
+                    <a class="btn btn-link btn-footer-service" href="#services" data-target-tab="#tab-pane-5">Esthétique Automobile</a>
+                    <!-- NOUVEAU LIEN DANS LE FOOTER AVEC ACTION RE-CIBLÉE -->
+                    <a class="btn btn-link btn-footer-service" href="#services" data-target-tab="#tab-pane-6">Service Carte Grise</a>
                 </div>
             </div>
         </div>
@@ -1032,9 +1046,8 @@
     <!-- Template Javascript -->
 <script src="js_lst/main.js"></script>
 
-<!-- Script simplifié pour initialisations supplémentaires -->
+<!-- Script personnalisé pour gérer les défilements et l'activation des onglets de services -->
 <script>
-// Script simplifié - juste pour initialiser WOW.js
 document.addEventListener('DOMContentLoaded', function() {
     if (typeof WOW !== 'undefined') {
         new WOW().init();
@@ -1057,6 +1070,46 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // GESTION DU DÉFILEMENT ET DE L'ACTIVATION DES ONGLETS DE SERVICES
+    function navigateToTab(targetTabId) {
+        var targetSection = document.getElementById('services');
+        if (!targetSection) return;
+
+        // Étape 1 : Faire défiler la page de manière fluide vers la section services
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // Étape 2 : Activer le bouton d'onglet correspondant
+        var tabButton = document.querySelector('[data-bs-target="' + targetTabId + '"]');
+        if (tabButton) {
+            var tab = new bootstrap.Tab(tabButton);
+            tab.show();
+        }
+    }
+
+    // 1. Boutons à l'intérieur du Carrousel principal
+    var scrollTabButtons = document.querySelectorAll('.btn-scroll-to-tab');
+    scrollTabButtons.forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault(); // Empêche le comportement d'ancre natif (qui fait sursauter la page)
+            var targetTabId = this.getAttribute('data-target-tab');
+            if (targetTabId) {
+                navigateToTab(targetTabId);
+            }
+        });
+    });
+
+    // 2. Liens du Footer (Pied de page) vers des services spécifiques
+    var footerServiceLinks = document.querySelectorAll('.btn-footer-service');
+    footerServiceLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Annule le comportement natif d'ancre
+            var targetTabId = this.getAttribute('data-target-tab');
+            if (targetTabId) {
+                navigateToTab(targetTabId);
+            }
+        });
+    });
 });
 </script>
 
