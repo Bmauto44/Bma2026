@@ -157,10 +157,17 @@
                 <a href="#services" class="nav-item nav-link">Services</a>
                 <a href="#testimonials" class="nav-item nav-link">Avis</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
+                <a href="#" id="shareSiteBtn" class="nav-item nav-link text-primary fw-bold"><i class="fa fa-share-alt me-1"></i>Partager le lien du site</a>
             </div>
-            <a href="https://wa.me/33744414266" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
-                <i class="fab fa-whatsapp me-2"></i>Devis WhatsApp
-            </a>
+            <!-- Double bouton : WhatsApp (Vert) & Email (Bleu/Gris foncé) -->
+            <div class="d-none d-lg-flex align-items-center">
+                <a href="https://wa.me/33744414266" class="btn btn-success py-4 px-3" style="border-radius: 0; height: 100%;">
+                    <i class="fab fa-whatsapp me-2"></i>Devis WhatsApp
+                </a>
+                <a href="mailto:bmautomobiles.contact@gmail.com?subject=Demande%20de%20devis%20-%20BM%20Automobiles" class="btn btn-dark py-4 px-3" style="border-radius: 0; height: 100%; background-color: #1e242b; border-color: #1e242b;">                    
+                    <i class="fa fa-envelope me-2"></i>Devis par Mail
+                </a>
+            </div>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -235,7 +242,7 @@
                                     <h6 class="text-white text-uppercase mb-3 animated slideInDown">// habilitation d'état SIV //</h6>
                                     <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Service Carte Grise</h1>
                                     <!-- Ajout de l'identifiant de redirection data-target-tab pour le JS -->
-                                    <a href="#services" data-target-tab="#tab-pane-6" class="btn btn-primary py-3 px-5 animated slideInDown btn-scroll-to-tab">
+                                    <a href="#services" data-xtarget-tab="#tab-pane-6" class="btn btn-primary py-3 px-5 animated slideInDown btn-scroll-to-tab">
                                         Faire ma carte grise <i class="fa fa-id-card ms-3"></i>
                                     </a>
                                 </div>
