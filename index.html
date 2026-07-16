@@ -163,8 +163,8 @@
                 <a href="https://wa.me/33744414266" class="btn btn-success py-4 px-3" style="border-radius: 0; height: 100%;">
                     <i class="fab fa-whatsapp me-2"></i>Devis WhatsApp
                 </a>
-                <a href="mailto:bmautomobiles.contact@gmail.com?subject=Demande%20de%20devis%20-%20BM%20Automobiles" class="btn btn-dark py-4 px-3" style="border-radius: 0; height: 100%; background-color: #1e242b; border-color: #1e242b;">                    
-                    <i class="fa fa-envelope me-2"></i>Devis par Mail
+                <a href="#" class="btn btn-dark py-4 px-3 mail-protection-btn" data-subject="Demande%20de%20devis%20-%20BM%20Automobiles" style="border-radius: 0; height: 100%; background-color: #1e242b; border-color: #1e242b;">
+                <i class="fa fa-envelope me-2"></i>Devis par Mail
                 </a>
             </div>
         </div>
@@ -1118,6 +1118,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
-
+<!-- Script Anti-Spam pour le bouton Mail -->
+<script>
+document.querySelectorAll('.mail-protection-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        var user = "bmautomobiles.contact";
+        var domain = "gmail.com";
+        var subject = this.getAttribute('data-subject') || "Demande";
+        window.location.href = "mailto:" + user + "@" + domain + "?subject=" + subject;
+    });
+});
+</script>
+    
 </body>
 </html>
